@@ -1,6 +1,7 @@
 require 'eldr'
 
 require_relative './app/models/ticket'
+require_relative './app/models/ticket_type'
 
 ActiveRecord::Base.establish_connection(
   adapter:  'mysql',
@@ -12,6 +13,6 @@ ActiveRecord::Base.establish_connection(
 
 class TtcTicketeer < Eldr::App
   get '/', proc {
-    [200, { 'Content-Type' => 'txt' }, [Ticket.new.to_json]]
+    [200, { 'Content-Type' => 'txt' }, [TicketType.all.to_json]]
   }
 end

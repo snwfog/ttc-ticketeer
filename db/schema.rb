@@ -11,6 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20151204055221) do
+
+  create_table "test", id: false, force: :cascade do |t|
+    t.string "message", limit: 100
+  end
+
+  create_table "ticket_types", force: :cascade do |t|
+    t.decimal "price",                       precision: 10
+    t.string  "name",            limit: 255
+    t.string  "resource_key",    limit: 255
+    t.string  "warning",         limit: 255
+    t.string  "type_uuid",       limit: 255
+    t.integer "type_identifier", limit: 4
+  end
+
+  create_table "tickets", force: :cascade do |t|
+    t.integer  "ticket_type_id", limit: 4
+    t.string   "uuid",           limit: 255
+    t.datetime "activated_at"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
 
 end
