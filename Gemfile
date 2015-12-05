@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Rails
+# Rails plucks
 gem 'activemodel'
 gem 'activerecord'
 
@@ -10,6 +10,9 @@ gem 'tilt'
 gem 'eldr'
 gem 'eldr-rendering'
 gem 'eldr-assets'
+
+# User authentication
+gem 'userapp'
 
 # Server / Deployment / Infra / Setup
 gem 'unicorn'
@@ -21,6 +24,8 @@ gem 'statsd-instrument'
 
 # Development / Debugging
 gem 'colorize'
+
+gem 'active_model_serializers'
 
 group :db do
   gem 'mysql'

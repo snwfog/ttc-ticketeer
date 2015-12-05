@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151204055221) do
+ActiveRecord::Schema.define(version: 20151205195218) do
 
   create_table "test", id: false, force: :cascade do |t|
     t.string "message", limit: 100
@@ -27,11 +27,23 @@ ActiveRecord::Schema.define(version: 20151204055221) do
   end
 
   create_table "tickets", force: :cascade do |t|
-    t.integer  "ticket_type_id", limit: 4
-    t.string   "uuid",           limit: 255
+    t.integer  "ticket_type_id",   limit: 4
+    t.string   "uuid",             limit: 255
     t.datetime "activated_at"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.integer  "issue_to_user_id", limit: 4
   end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "first_name",  limit: 255
+    t.string   "last_name",   limit: 255
+    t.string   "email",       limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "user_app_id", limit: 255
+  end
+
+  add_index "users", ["user_app_id"], name: "uix_users_user_app_id", unique: true, using: :btree
 
 end
