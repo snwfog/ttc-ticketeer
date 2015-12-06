@@ -32,6 +32,8 @@ gem 'active_model_serializers'
 group :db do
   gem 'mysql'
   gem 'standalone_migrations'
+  gem 'memoist'
+  gem 'cityhash' # Fast hashing fns
 end
 
 group :development do

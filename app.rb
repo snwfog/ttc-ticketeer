@@ -39,9 +39,7 @@ class TtcTicketeer < Eldr::App
   get '/' do
     ticket_type = TicketType.first
 
-    ticket = Ticket.create!(uuid: SecureRandom::uuid)
-    ticket.ticket_type = ticket_type
-    ticket.save
+    ticket = Ticket.create!(uuid: SecureRandom::uuid, ticket_type: ticket_type)
     [200, { 'Content-Type' => 'txt' }, [TicketSerializer.new(ticket).to_json]]
   end
 
