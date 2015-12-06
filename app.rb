@@ -1,6 +1,7 @@
 require 'eldr'
 require 'colorize'
 require 'userapp'
+require 'active_model_serializers'
 
 require_relative './app/models/user'
 require_relative './app/models/ticket'
@@ -37,14 +38,18 @@ class TtcTicketeer < Eldr::App
   end
 
   get '/' do
-    ticket_type = TicketType.first
-
-    ticket = Ticket.create!(uuid: SecureRandom::uuid, ticket_type: ticket_type)
-    [200, { 'Content-Type' => 'txt' }, [TicketSerializer.new(ticket).to_json]]
+    available_tickets = Ticket.available
+    serialized_available_tickets = ActiveModel::ArraySerializer.new(available_tickets, serializer: TicketSerializer)
+    [200, { 'Content-Type' => 'application/json' }, [serialized_available_tickets.as_json]]
+    # ticket_type = TicketType.first
+    #
+    # ticket = Ticket.create!(uuid: SecureRandom::uuid, ticket_type: ticket_type)
+    # [200, { 'Content-Type' => 'txt' }, [TicketSerializer.new(ticket).to_json]]
   end
 
   get '/tickets/:id' do
-    puts parmas[:id]
+    t = Ticket.find(params['id'])
+    [200, { 'Content-Type' => 'application/json' }, [TicketSerializer.new(t).to_json]]
   end
 
   post '/tickets' do |env|

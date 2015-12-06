@@ -8,6 +8,8 @@ class Ticket < ActiveRecord::Base
   validates :uuid, presence: true
   validates :ticket_type, presence: true
 
+  scope :available, -> { where(:user => nil) }
+
   before_validation do
     self.uuid = SecureRandom.uuid
   end
