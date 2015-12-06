@@ -2,6 +2,7 @@ require 'eldr'
 require 'colorize'
 require 'userapp'
 
+require_relative './app/models/user'
 require_relative './app/models/ticket'
 require_relative './app/models/ticket_type'
 
@@ -30,7 +31,9 @@ class TtcTicketeer < Eldr::App
 
   before do
     puts 'Authenticating user...'.yellow
-
+    # user = User.find_by(user_app_id: params[:user_id])
+    # raise 'User Not Found' if user.nil?
+    # puts params
   end
 
   get '/' do
@@ -39,6 +42,19 @@ class TtcTicketeer < Eldr::App
     ticket = Ticket.create!(uuid: SecureRandom::uuid)
     ticket.ticket_type = ticket_type
     ticket.save
+    [200, { 'Content-Type' => 'txt' }, [TicketSerializer.new(ticket).to_json]]
+  end
+
+  get '/tickets/:id' do
+    puts parmas[:id]
+  end
+
+  post '/tickets' do |env|
+    req = Rack::Request.new(env)
+    ticket = Ticket.new.from_json(req.body)
+    ticket_type = TicketType.find_by(type_uuid: params['type_uuid'])
+    raise 'Ticket Type not found' if ticket_type.nil?
+    ticket = Ticket.create(ticket_type: ticket_type)
     [200, { 'Content-Type' => 'txt' }, [TicketSerializer.new(ticket).to_json]]
   end
 end

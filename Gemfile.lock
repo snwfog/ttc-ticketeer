@@ -30,8 +30,17 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
     builder (3.2.2)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
     colorize (0.7.7)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    diff-lcs (1.2.5)
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
     eldr (0.0.4)
@@ -44,11 +53,13 @@ GEM
       activesupport (~> 4.2)
       eldr (~> 0.0)
       tilt (~> 1.4)
+    equalizer (0.0.11)
     erubis (2.7.0)
     fast_blank (0.0.2)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
+    ice_nine (0.11.1)
     json (1.8.3)
     kgio (2.10.0)
     loofah (2.0.3)
@@ -88,6 +99,19 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.1)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     shotgun (0.9.1)
       rack (>= 1.0)
     slim (3.0.6)
@@ -115,6 +139,11 @@ GEM
     userapp (0.2.8)
       json
       rest-client
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
   ruby
@@ -130,6 +159,7 @@ DEPENDENCIES
   mysql
   rack
   rake-remote_task
+  rspec
   shotgun
   slim
   standalone_migrations
@@ -137,3 +167,4 @@ DEPENDENCIES
   tilt
   unicorn
   userapp
+  virtus

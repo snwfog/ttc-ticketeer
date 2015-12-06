@@ -11,6 +11,8 @@ gem 'eldr'
 gem 'eldr-rendering'
 gem 'eldr-assets'
 
+gem 'virtus' # Allow for cooler model class
+
 # User authentication
 gem 'userapp'
 
@@ -34,4 +36,8 @@ end
 
 group :development do
   gem 'shotgun'
+end
+
+group :test do
+  gem 'rspec'
 end

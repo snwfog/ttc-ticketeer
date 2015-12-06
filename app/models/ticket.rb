@@ -7,4 +7,8 @@ class Ticket < ActiveRecord::Base
 
   validates :uuid, presence: true
   validates :ticket_type, presence: true
+
+  before_validation do
+    self.uuid = SecureRandom.uuid
+  end
 end
