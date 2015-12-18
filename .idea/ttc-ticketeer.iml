@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="CompassSettings">
+    <option name="compassExecutableFilePath" value="/usr/local/opt/rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/compass-0.12.2/bin/compass" />
+  </component>
+  <component name="ModuleRunConfigurationManager">
+    <configuration default="false" name="ticketeer_shotgun_dev" type="CommandRunConfigurationType" factoryName="Gem Command">
+      <module name="ttc-ticketeer" />
+      <COMMAND_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <COMMAND_RUN_CONFIGURATION NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <COMMAND_RUN_CONFIGURATION NAME="SHOULD_USE_SDK" VALUE="false" />
+      <COMMAND_RUN_CONFIGURATION NAME="ALTERN_SDK_NAME" VALUE="" />
+      <COMMAND_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="USER_APP" value="5658a40ff167b" />
+        <env name="USER_APP_API_TOKEN" value="c3LAdYB5STWPOnrpIlYVhQ" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <COMMAND_CONFIG_SETTINGS_ID NAME="GEM_NAME" VALUE="shotgun" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_NAME" VALUE="" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="config.ru" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="config.ru" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ticketeer_app_rack_run" type="RackRunConfigurationType" factoryName="Rack">
+      <module name="ttc-ticketeer" />
+      <RACK_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RACK_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RACK_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RACK_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RACK_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="USER_APP" value="5658a40ff167b" />
+        <env name="USER_APP_API_TOKEN" value="c3LAdYB5STWPOnrpIlYVhQ" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RACK_CONFIG_SETTINGS_ID NAME="PORT" VALUE="9292" />
+      <RACK_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RACK_CONFIG_SETTINGS_ID NAME="CONFIG_FILE" VALUE="config.ru" />
+      <RACK_CONFIG_SETTINGS_ID NAME="RACK_SERVER_TYPE" VALUE="default" />
+      <RACK_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="actionpack (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/actionpack-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionpack-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionpack-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="actionview (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/actionview-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionview-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionview-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="active_model_serializers (vbundled(0.9.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/active_model_serializers-0.9.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/active_model_serializers-0.9.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/active_model_serializers-0.9.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activemodel (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/activemodel-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/activemodel-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/activemodel-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activerecord (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/activerecord-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/activerecord-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/activerecord-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activesupport (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/activesupport-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/activesupport-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/activesupport-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="arel (vbundled(6.0.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/arel-6.0.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/arel-6.0.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/arel-6.0.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="axiom-types (vbundled(0.1.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/axiom-types-0.1.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/axiom-types-0.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/axiom-types-0.1.1/config" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/axiom-types-0.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/axiom-types-0.1.1/config" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="builder (vbundled(3.2.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/builder-3.2.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/builder-3.2.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/builder-3.2.2/rakelib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/builder-3.2.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/builder-3.2.2/rakelib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="cityhash (vbundled(0.8.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/cityhash-0.8.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/cityhash-0.8.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/cityhash-0.8.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/cityhash-0.8.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/cityhash-0.8.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="coercible (vbundled(1.0.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/coercible-1.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/coercible-1.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/coercible-1.0.0/config" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/coercible-1.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/coercible-1.0.0/config" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="colorize (vbundled(0.7.7), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/colorize-0.7.7) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/colorize-0.7.7/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/colorize-0.7.7/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="descendants_tracker (vbundled(0.0.4), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/descendants_tracker-0.0.4) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/descendants_tracker-0.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/descendants_tracker-0.0.4/config" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/descendants_tracker-0.0.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/descendants_tracker-0.0.4/config" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="diff-lcs (vbundled(1.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/diff-lcs-1.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/diff-lcs-1.2.5/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/diff-lcs-1.2.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/diff-lcs-1.2.5/autotest" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/diff-lcs-1.2.5/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/diff-lcs-1.2.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/diff-lcs-1.2.5/autotest" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="domain_name (vbundled(0.5.25), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/domain_name-0.5.25) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/domain_name-0.5.25/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/domain_name-0.5.25/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/domain_name-0.5.25/tool" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/domain_name-0.5.25/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/domain_name-0.5.25/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/domain_name-0.5.25/tool" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="eldr (vbundled(0.0.4), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/eldr-0.0.4) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-0.0.4/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-0.0.4/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="eldr-assets (vbundled(0.0.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/eldr-assets-0.0.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-assets-0.0.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-assets-0.0.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="eldr-rendering (vbundled(0.0.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/eldr-rendering-0.0.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-rendering-0.0.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-rendering-0.0.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="equalizer (vbundled(0.0.11), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/equalizer-0.0.11) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/equalizer-0.0.11/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/equalizer-0.0.11/config" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/equalizer-0.0.11/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/equalizer-0.0.11/config" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="erubis (vbundled(2.7.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/erubis-2.7.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/contrib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/doc-api" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/benchmark" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/contrib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/doc-api" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/benchmark" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="fast_blank (vbundled(0.0.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/fast_blank-0.0.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/fast_blank-0.0.2/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/fast_blank-0.0.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/fast_blank-0.0.2/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/fast_blank-0.0.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="http-cookie (vbundled(1.0.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/http-cookie-1.0.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/http-cookie-1.0.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/http-cookie-1.0.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="i18n (vbundled(0.7.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/i18n-0.7.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/i18n-0.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/i18n-0.7.0/gemfiles" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/i18n-0.7.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/i18n-0.7.0/gemfiles" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ice_nine (vbundled(0.11.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/ice_nine-0.11.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/ice_nine-0.11.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/ice_nine-0.11.1/config" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/ice_nine-0.11.1/benchmarks" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/ice_nine-0.11.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/ice_nine-0.11.1/config" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/ice_nine-0.11.1/benchmarks" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="json (vbundled(1.8.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/json-1.8.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/diagrams" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/java" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/tools" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/diagrams" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="kgio (vbundled(2.10.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/kgio-2.10.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/kgio-2.10.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/kgio-2.10.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/kgio-2.10.0/archive" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/kgio-2.10.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/kgio-2.10.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/kgio-2.10.0/archive" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="loofah (vbundled(2.0.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/loofah-2.0.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/loofah-2.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/loofah-2.0.3/benchmark" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/loofah-2.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/loofah-2.0.3/benchmark" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="memoist (vbundled(0.13.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/memoist-0.13.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/memoist-0.13.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/memoist-0.13.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mime-types (vbundled(2.99), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/mime-types-2.99) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99/support" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.99/support" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mini_portile2 (vbundled(2.0.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/mini_portile2-2.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mini_portile2-2.0.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mini_portile2-2.0.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="minitest (vbundled(5.8.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/minitest-5.8.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/minitest-5.8.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/minitest-5.8.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mustermann (vbundled(0.4.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/mustermann-0.4.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mustermann-0.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mustermann-0.4.0/bench" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mustermann-0.4.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mustermann-0.4.0/bench" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mysql (vbundled(2.9.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/mysql-2.9.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql-2.9.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql-2.9.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql-2.9.1/extra" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql-2.9.1/tasks" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql-2.9.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql-2.9.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql-2.9.1/extra" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql-2.9.1/tasks" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="netrc (vbundled(0.11.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/netrc-0.11.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/netrc-0.11.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/netrc-0.11.0/data" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/netrc-0.11.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/netrc-0.11.0/data" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="nokogiri (vbundled(1.6.7), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/nokogiri-1.6.7) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/patches" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/suppressions" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/patches" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.7/suppressions" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="open4 (vbundled(1.3.4), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/open4-1.3.4) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/open4-1.3.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/open4-1.3.4/samples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/open4-1.3.4/white_box" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/open4-1.3.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/open4-1.3.4/samples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/open4-1.3.4/white_box" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rack (vbundled(1.6.4), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rack-1.6.4) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/contrib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/example" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/contrib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/example" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rack-test (vbundled(0.6.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rack-test-0.6.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-test-0.6.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-test-0.6.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rails-deprecated_sanitizer (vbundled(1.0.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rails-deprecated_sanitizer-1.0.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-deprecated_sanitizer-1.0.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-deprecated_sanitizer-1.0.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rails-dom-testing (vbundled(1.0.7), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rails-dom-testing-1.0.7) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-dom-testing-1.0.7/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-dom-testing-1.0.7/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rails-html-sanitizer (vbundled(1.0.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rails-html-sanitizer-1.0.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-html-sanitizer-1.0.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-html-sanitizer-1.0.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="railties (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/railties-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/railties-4.2.5/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/railties-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/railties-4.2.5/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/railties-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="raindrops (vbundled(0.15.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/raindrops-0.15.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/raindrops-0.15.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/raindrops-0.15.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/raindrops-0.15.0/archive" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/raindrops-0.15.0/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/raindrops-0.15.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/raindrops-0.15.0/archive" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rake (vbundled(10.4.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rake-10.4.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.4.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.4.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.4.2/rakelib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.4.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.4.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-10.4.2/rakelib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rake-remote_task (vbundled(2.3.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rake-remote_task-2.3.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-remote_task-2.3.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rake-remote_task-2.3.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rest-client (vbundled(1.8.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rest-client-1.8.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rest-client-1.8.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rest-client-1.8.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rest-client-1.8.0/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rest-client-1.8.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec (vbundled(3.4.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rspec-3.4.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-3.4.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-3.4.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-core (vbundled(3.4.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rspec-core-3.4.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-core-3.4.1/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-core-3.4.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-core-3.4.1/exe" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-core-3.4.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-expectations (vbundled(3.4.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rspec-expectations-3.4.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-expectations-3.4.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-expectations-3.4.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-mocks (vbundled(3.4.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rspec-mocks-3.4.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-mocks-3.4.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-mocks-3.4.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rspec-support (vbundled(3.4.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rspec-support-3.4.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-support-3.4.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rspec-support-3.4.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="shotgun (vbundled(0.9.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/shotgun-0.9.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/shotgun-0.9.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/shotgun-0.9.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/shotgun-0.9.1/man" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/shotgun-0.9.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/shotgun-0.9.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/shotgun-0.9.1/man" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="slim (vbundled(3.0.6), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/slim-3.0.6) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/benchmarks" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/benchmarks" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="standalone_migrations (vbundled(4.0.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/standalone_migrations-4.0.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/example" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/example" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="statsd-instrument (vbundled(2.0.10), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/statsd-instrument-2.0.10) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/statsd-instrument-2.0.10/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/statsd-instrument-2.0.10/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="temple (vbundled(0.7.6), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/temple-0.7.6) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/temple-0.7.6/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/temple-0.7.6/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="thor (vbundled(0.19.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/thor-0.19.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thor-0.19.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thor-0.19.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thor-0.19.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thor-0.19.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="thread_safe (vbundled(0.3.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/thread_safe-0.3.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/yard-template" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/yard-template" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tilt (vbundled(1.4.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/tilt-1.4.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-1.4.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-1.4.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-1.4.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-1.4.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tool (vbundled(0.2.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/tool-0.2.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tool-0.2.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tool-0.2.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tzinfo (vbundled(1.2.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/tzinfo-1.2.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tzinfo-1.2.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tzinfo-1.2.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="unf (vbundled(0.1.4), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/unf-0.1.4) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unf-0.1.4/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unf-0.1.4/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="unf_ext (vbundled(0.0.7.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/unf_ext-0.0.7.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unf_ext-0.0.7.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unf_ext-0.0.7.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unf_ext-0.0.7.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unf_ext-0.0.7.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="unicorn (vbundled(5.0.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/unicorn-5.0.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/t" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/man" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/archive" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/Documentation" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/t" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/man" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/archive" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/unicorn-5.0.1/Documentation" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="userapp (vbundled(0.2.8), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/userapp-0.2.8) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/userapp-0.2.8/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/userapp-0.2.8/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="virtus (vbundled(1.0.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/virtus-1.0.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/virtus-1.0.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/virtus-1.0.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.6, ruby-2.1.4-p265) [gem]" level="application" />
+  </component>
+</module>
