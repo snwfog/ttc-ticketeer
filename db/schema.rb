@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151205195218) do
-
-  create_table "test", id: false, force: :cascade do |t|
-    t.string "message", limit: 100
-  end
+ActiveRecord::Schema.define(version: 20151218022833) do
 
   create_table "ticket_types", force: :cascade do |t|
     t.decimal "price",                       precision: 10
@@ -25,6 +21,8 @@ ActiveRecord::Schema.define(version: 20151205195218) do
     t.string  "type_uuid",       limit: 255
     t.integer "type_identifier", limit: 4
   end
+
+  add_index "ticket_types", ["type_uuid"], name: "ticket_types_type_uuid", unique: true, using: :btree
 
   create_table "tickets", force: :cascade do |t|
     t.integer  "ticket_type_id",   limit: 4

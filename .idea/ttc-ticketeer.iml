@@ -237,26 +237,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="eldr-assets (vbundled(0.0.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/eldr-assets-0.0.1) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-assets-0.0.1/lib" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-assets-0.0.1/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="eldr-rendering (vbundled(0.0.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/eldr-rendering-0.0.1) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-rendering-0.0.1/lib" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/eldr-rendering-0.0.1/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="equalizer (vbundled(0.0.11), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/equalizer-0.0.11) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/equalizer-0.0.11/lib" />
@@ -353,6 +333,16 @@
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/tests" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/tools" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/diagrams" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsonapi-serializers (vbundled(0.3.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/jsonapi-serializers-0.3.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/jsonapi-serializers-0.3.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/jsonapi-serializers-0.3.1/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -607,6 +597,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="require_all (vbundled(1.3.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/require_all-1.3.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/require_all-1.3.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/require_all-1.3.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="rest-client (vbundled(1.8.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rest-client-1.8.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/rest-client-1.8.0/bin" />
@@ -685,20 +685,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="slim (vbundled(3.0.6), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/slim-3.0.6) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/benchmarks" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/slim-3.0.6/benchmarks" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="standalone_migrations (vbundled(4.0.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/standalone_migrations-4.0.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/lib" />
@@ -709,26 +695,6 @@
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/vendor" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/example" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="statsd-instrument (vbundled(2.0.10), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/statsd-instrument-2.0.10) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/statsd-instrument-2.0.10/lib" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/statsd-instrument-2.0.10/lib" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="temple (vbundled(0.7.6), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/temple-0.7.6) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/temple-0.7.6/lib" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/temple-0.7.6/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -757,18 +723,6 @@
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/tasks" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/yard-template" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="tilt (vbundled(1.4.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/tilt-1.4.1) [path][gem]">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-1.4.1/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-1.4.1/lib" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-1.4.1/bin" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-1.4.1/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -856,6 +810,6 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.6, ruby-2.1.4-p265) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.10.6, ruby-2.1.4-p265) [gem]" level="application" />
   </component>
 </module>

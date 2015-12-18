@@ -1,16 +1,21 @@
 source 'https://rubygems.org'
 
+gem 'rack'
 # Rails plucks
 gem 'activemodel'
 gem 'activerecord'
 
-gem 'rack'
-gem 'slim'
-gem 'tilt'
-gem 'eldr'
-gem 'eldr-rendering'
-gem 'eldr-assets'
+gem 'active_model_serializers'
 
+gem 'eldr'
+gem 'jsonapi-serializers'
+
+# gem 'slim'
+# gem 'tilt'
+# gem 'eldr-rendering'
+# gem 'eldr-assets'
+
+gem 'require_all'
 gem 'virtus' # Allow for cooler model class
 
 # User authentication
@@ -21,13 +26,8 @@ gem 'unicorn'
 gem 'rake-remote_task'
 
 # Monitoring / Instrumenting
-gem 'statsd-instrument'
+# gem 'statsd-instrument'
 # gem 'newrelic_rpm'
-
-# Development / Debugging
-gem 'colorize'
-
-gem 'active_model_serializers'
 
 group :db do
   gem 'mysql'
@@ -38,6 +38,7 @@ end
 
 group :development do
   gem 'shotgun'
+  gem 'colorize'
 end
 
 group :test do

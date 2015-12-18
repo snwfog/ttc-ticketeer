@@ -1,5 +1,9 @@
-require 'active_model_serializers'
-
-class TicketTypeSerializer < ActiveModel::Serializer
-  attributes :id, :price, :name, :resource_key, :warning, :type_uuid, :type_identifier
+class TicketTypeSerializer < SerializerBase
+  attribute :id
+  attribute :price
+  attribute :name
+  attribute :resource_key
+  attribute :warning
+  attribute :type_uuid
+  attribute :type_identifier
 end
