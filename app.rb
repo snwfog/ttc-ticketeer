@@ -35,26 +35,33 @@ class TtcTicketeer < Eldr::App
   end
 
   get '/' do
-    [200, { 'Content-Type' => 'application/json' }, [{'message' => 'Welcome to ttc-ticketeer'}.to_json]]
+    [200,
+     { 'Content-Type' => 'application/json' },
+     [{'message' => 'Welcome to ttc-ticketeer'}.to_json]]
   end
 
   get '/ticket_types' do
     ticket_types = TicketType.all
-    [200, { 'Content-Type' => 'application/json' }, [JSONAPI::Serializer.serialize(ticket_types, is_collection: true).to_json]]
+    [200,
+     { 'Content-Type' => 'application/json' },
+     [JSONAPI::Serializer.serialize(ticket_types,
+                                    is_collection: true).to_json]]
   end
 
   get '/tickets' do
     available_tickets = Ticket.available
-    # ticket_type = TicketType.first
-    #
-    # ticket = Ticket.create!(uuid: SecureRandom::uuid, ticket_type: ticket_type)
-    # [200, { 'Content-Type' => 'txt' }, [TicketSerializer.new(ticket).to_json]]
-    [200, { 'Content-Type' => 'application/json' }, [JSONAPI::Serializer.serialize(available_tickets, is_collection: true).to_json]]
+    [200,
+     { 'Content-Type' => 'application/json' },
+     [JSONAPI::Serializer.serialize(available_tickets,
+                                    is_collection: true,
+                                    include: ['ticket-type']).to_json]]
   end
 
   get '/tickets/:id' do
     t = Ticket.find(params['id'])
-    [200, { 'Content-Type' => 'application/json' }, [TicketSerializer.new(t).to_json]]
+    [200,
+     { 'Content-Type' => 'application/json' },
+     [TicketSerializer.new(t).to_json]]
   end
 
   post '/tickets' do |env|
