@@ -57,11 +57,12 @@ class TtcTicketeer < Eldr::App
                                     include: ['ticket-type']).to_json]]
   end
 
-  get '/tickets/:id' do
-    t = Ticket.find(params['id'])
+  get '/ticket/:uuid' do
+    t = Ticket.find_by_uuid(params['uuid'])
+
     [200,
      { 'Content-Type' => 'application/json' },
-     [TicketSerializer.new(t).to_json]]
+     [JSONAPI::Serializer.serialize(t).to_json]]
   end
 
   post '/tickets' do |env|
@@ -70,6 +71,8 @@ class TtcTicketeer < Eldr::App
     ticket_type = TicketType.find_by(type_uuid: params['type_uuid'])
     raise 'Ticket Type not found' if ticket_type.nil?
     ticket = Ticket.create(ticket_type: ticket_type)
-    [200, { 'Content-Type' => 'txt' }, [TicketSerializer.new(ticket).to_json]]
+    [200,
+     { 'Content-Type' => 'txt' },
+     [JSONAPI::Serializer.serialize(t).to_json]]
   end
 end
