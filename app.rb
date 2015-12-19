@@ -2,7 +2,6 @@ require 'eldr'
 require 'userapp'
 require 'colorize'
 require 'jsonapi-serializers'
-# require 'active_model_serializers'
 require 'require_all'
 
 require_rel './app'
