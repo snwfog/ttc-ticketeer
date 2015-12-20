@@ -1,3 +1,6 @@
+# Editor
+.idea/workspace.xml
+
 ### Rails template
 *.rbc
 capybara-*.html
