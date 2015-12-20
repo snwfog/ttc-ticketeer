@@ -4,10 +4,12 @@ gem 'rack'
 # Rails plucks
 gem 'activemodel'
 gem 'activerecord'
+gem 'actionpack' # Required by actioncontroller in jsonapi serializer
 
 gem 'active_model_serializers'
 
 gem 'eldr'
+gem 'jsonapi-resources'
 gem 'jsonapi-serializers'
 
 # gem 'slim'

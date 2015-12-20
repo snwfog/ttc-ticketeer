@@ -59,6 +59,16 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
+      <library name="actionmailer (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/actionmailer-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionmailer-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionmailer-4.2.5/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="actionpack (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/actionpack-4.2.5) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionpack-4.2.5/lib" />
@@ -85,6 +95,16 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/active_model_serializers-0.9.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="activejob (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/activejob-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/activejob-4.2.5/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/activejob-4.2.5/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -187,6 +207,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="concurrent-ruby (vbundled(1.0.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/concurrent-ruby-1.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/concurrent-ruby-1.0.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/concurrent-ruby-1.0.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="descendants_tracker (vbundled(0.0.4), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/descendants_tracker-0.0.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/descendants_tracker-0.0.4/lib" />
@@ -279,6 +309,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="globalid (vbundled(0.3.6), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/globalid-0.3.6) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/globalid-0.3.6/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/globalid-0.3.6/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="http-cookie (vbundled(1.0.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/http-cookie-1.0.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/http-cookie-1.0.2/lib" />
@@ -337,6 +377,16 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="jsonapi-resources (vbundled(0.7.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/jsonapi-resources-0.7.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/jsonapi-resources-0.7.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/jsonapi-resources-0.7.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="jsonapi-serializers (vbundled(0.3.1), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/jsonapi-serializers-0.3.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/jsonapi-serializers-0.3.1/lib" />
@@ -369,6 +419,16 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/loofah-2.0.3/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/loofah-2.0.3/benchmark" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mail (vbundled(2.6.3), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/mail-2.6.3) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mail-2.6.3/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mail-2.6.3/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -513,6 +573,16 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-test-0.6.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="rails (vbundled(4.2.5), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/rails-4.2.5) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-4.2.5/guides" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-4.2.5/guides" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -685,6 +755,28 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="sprockets (vbundled(3.5.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/sprockets-3.5.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-3.5.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-3.5.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-3.5.2/bin" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-3.5.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="sprockets-rails (vbundled(3.0.0), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/sprockets-rails-3.0.0) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-rails-3.0.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-rails-3.0.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="standalone_migrations (vbundled(4.0.2), /Users/snw/src/ttc-ticketeer/vendor/bundle/gems/standalone_migrations-4.0.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/standalone_migrations-4.0.2/lib" />
@@ -810,6 +902,6 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.10.6, ruby-2.1.4-p265) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.6, ruby-2.1.4-p265) [gem]" level="application" />
   </component>
 </module>
